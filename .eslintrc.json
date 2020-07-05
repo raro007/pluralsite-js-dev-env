@@ -1,0 +1,20 @@
+{
+    "root": true,//use parent directory
+    "extends": [
+      "eslint:recommended",//recommended rules
+      "plugin:import/errors",//plugins for import invalid inport
+      "plugin:import/warnings"
+    ],
+    "parserOptions": {//version of JS
+      "ecmaVersion": 7, //ES7 ES2016
+      "sourceType": "module" //STANDARD JS MODULE
+    },
+    "env": {// DECLARE DIFFERENT ENVIRONMENT THAT ESLINT SHOULD BE AWARE OF
+      "browser": true,//EXPECT CERTAIN GLOBAL ENV TO WORK WITH
+      "node": true,
+      "mocha": true
+    },
+    "rules": { //SET RULES
+     " no-console": 1  //0: off, 1:warning, 2:error         
+    }
+  }
